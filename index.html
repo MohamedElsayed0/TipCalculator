@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="myStud" href="images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- left to Right (English) -->
+    <link rel="stylesheet" href="./main.css" />
+
+    <!-- Right to left (Arabic) -->
+    <!-- <link rel="stylesheet" href="./main-rtl.css" /> -->
+    <title>Tip calculator</title>
+  </head>
+
+  <body>
+
+    <div class="main container-fluid pt-5 pb-5">
+      <div class="row justify-content-center pt-5 pb-5">
+        <div class="col-12 pt-5 pb-5" style="text-align: center">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <div class="col-md-9 col-11 row Bill">
+          <div class="col-md-6 col-12 d-flex row-bill mb-4">
+            <div class="col-12 bill row">
+              <label class="pb-3 col-12" for="number"> Bill</label><br />
+              <input type="number" class="" id="bill" placeholder="0" />
+            </div>
+
+            <div class="col-12 row select">
+              <h6 class="col-12 pt-5 pb-3">Select Tip %</h6>
+              <div class="col-sm-4 col-6 mb-2">
+                <div class="num">5%</div>
+              </div>
+              <div class="col-sm-4 col-6 mb-2">
+                <div class="num">10%</div>
+              </div>
+              <div class="col-sm-4 col-6 mb-2">
+                <div class="num" style="width: 100%">15%</div>
+              </div>
+
+              <div class="col-sm-4 col-6 mb-2">
+                <div class="num" style="width: 100%">25%</div>
+              </div>
+              <div class="col-sm-4 col-6 mb-2">
+                <div class="num" style="width: 100%">50%</div>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input
+                  class="custom"
+                  type="number"
+                  placeholder="Custom"
+                  id="custom"
+                  style="width: 100%; text-align: center"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 bill bill2 row">
+              <div class="col-12 row align-items-center">
+                <label class="col-8 pt-5 pb-3" for="number">
+                  Number of People</label
+                >
+                <span class="col-4 pt-5 pb-3" for="number" id="can-t">
+                  Can't be zero</span
+                >
+              </div>
+              <br />
+              <input type="number"  placeholder="0" id="people" />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12 row result pt-5">
+            <div class="col-6 mb-3">
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+
+            <div class="col-6">
+              <h1 id="tipA">$0.00</h1>
+            </div>
+
+            <div class="col-6 mb-3">
+              <p>Total</p>
+
+              <span>/ person</span>
+            </div>
+
+            <div class="col-6">
+              <h1 id="totalA">$0.00</h1>
+            </div>
+
+            <div class="col-12 button">
+              <button class="btn btn-primary" id="reset">RESET</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

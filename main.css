@@ -1,0 +1,161 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+.main {
+  overflow: hidden;
+  font-family: "Space Mono";
+  background-color: #c5e4e7;
+}
+.main .row {
+  font-size: 24px;
+}
+.main .row .Bill {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.main .row .Bill .row-bill {
+  flex-wrap: wrap;
+}
+.main .row .Bill .row-bill .bill {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.main .row .Bill .row-bill .bill::before {
+  content: url(./images/icon-dollar.svg);
+  position: absolute;
+  bottom: 4%;
+  left: 30px;
+}
+.main .row .Bill .row-bill .bill label {
+  font-size: 16px;
+  color: #5e7a7d;
+}
+.main .row .Bill .row-bill .bill span {
+  font-size: 10px;
+  color: red;
+}
+.main .row .Bill .row-bill .bill input {
+  direction: rtl;
+  padding: 3px;
+  background-color: #f4fafa;
+  border: 2px solid transparent;
+  outline: transparent;
+  color: #00494d;
+  padding-right: 1rem;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.main .row .Bill .row-bill .bill input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.main .row .Bill .row-bill .bill input:focus {
+  border: 2px solid #26c0ab !important;
+}
+.main .row .Bill .row-bill .select {
+  padding-left: 0;
+  padding-right: 0;
+}
+.main .row .Bill .row-bill .select h6 {
+  color: #5e7a7d;
+}
+.main .row .Bill .row-bill .select .num {
+  background-color: #00494d;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0.2rem;
+  cursor: pointer;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.main .row .Bill .row-bill .select .num:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+.main .row .Bill .row-bill .select .custom {
+  font-size: 20px;
+  border: none;
+  padding: 0.3rem;
+  outline: 0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.main .row .Bill .row-bill .select .custom::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.main .row .Bill .row-bill .select .custom:focus {
+  border: 2px solid #a0c2c5 !important;
+}
+.main .row .Bill .row-bill .bill2::before {
+  content: url(./images/icon-person.svg);
+  position: absolute;
+  bottom: 3%;
+  left: 30px;
+}
+.main .row .Bill .row-bill .bill2 #can-t {
+  display: none;
+}
+.main .row .Bill .result {
+  background-color: #00494d;
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+  line-height: 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.main .row .Bill .result p {
+  color: #fff;
+  font-size: 16px;
+}
+.main .row .Bill .result span {
+  color: #7f9c9f;
+  font-size: 14px;
+}
+.main .row .Bill .result h1 {
+  color: #26c0ab;
+  font-weight: bold;
+}
+
+.main .row .Bill .result .button {
+  align-self: end;
+}
+.main .row .Bill .result .button button {
+  color: #00494d;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px;
+  background-color: #26c0ab;
+  outline: none !important;
+  border: none !important;
+}
+.main .row .Bill .result .button button:hover {
+  background-color: #55d8c7;
+}
+.active{
+  background-color: hsl(172, 67%, 45%) !important;
+  color: #fff !important;
+}
+.error{
+  display: flex !important;
+}
